@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/open_test_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Open Camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/open_gray_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Open Gray Camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/open_test_camera" />
+
+    <Button
+        android:id="@+id/open_color_detect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Open Color Detector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/open_gray_camera" />
+
+    <Button
+        android:id="@+id/line_detector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Open Line Detector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/open_color_detect" />
+
+    <Button
+        android:id="@+id/face_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Open Face Detector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_detector" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
